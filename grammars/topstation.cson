@@ -1,17 +1,41 @@
-
-
 'scopeName': 'source.topstation'
 'name': 'topstation'
 'fileTypes': ['src', 'inc']
 
-'patterns': [
+patterns: [
 	{
-		'match': '^[\\t ]*(rout),([A-Z][A-Za-z0-9_]+)'		
-		'captures':
-			'1':
-				'name': 'keyword.control.topstation'
-			'2':
-				'name': 'entity.name.function.topstation'
-		'name': 'meta.function.topstation'
+		include: '#comments'
+	}
+	{
+		include: '#functions'
 	}
 ]
+
+repository:
+	comments:
+		patterns: [
+			{
+				begin: '/\\*'
+				beginCaptures:
+					'0':
+						name: 'punctuation.definition.comment.begin.topstation'
+				end: '\\*/'
+				endCaptures:
+					'0':
+						name: 'punctuation.definition.comment.end.topstation'
+				name: 'comment.block.topstation'
+			}
+		]
+
+	functions:
+		patterns: [
+			{
+				'match': '^[\\t ]*(rout),([A-Z][A-Za-z0-9_]+)'		
+				'captures':
+					'1':
+						'name': 'keyword.control.topstation'
+					'2':
+						'name': 'entity.name.function.topstation'
+				'name': 'meta.function.topstation'
+			}
+		]
