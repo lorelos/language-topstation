@@ -8,11 +8,10 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/lorelos/langage-topstation.git"
+    "url": "https://github.com/lorelos/language-topstation.git"
   },
   "bugs": {
-    "url": "https://github.com/lorelos/langage-topstation/issues"
+    "url": "https://github.com/lorelos/language-topstation/issues"
   },
   "license": "MIT"
 }
-
