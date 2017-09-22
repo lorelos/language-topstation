@@ -1,0 +1,29 @@
+'.source.topstation':
+  'rout':
+    'prefix': 'rout'
+    'body': """
+      rout,${1:NomRoutine}
+      {
+        $2
+      }
+      $3
+    """
+  'if else':
+    'prefix': 'ife'
+    'body': """
+      if,"${1:test}"
+      {
+        $2
+      }
+      else
+      {
+        $3
+      }
+      $4
+    """
+  'nmbr':
+    'prefix': 'nmbr'
+    'body': 'nmbr(`${1:Selection}`)$2'
+  'xtr':
+    'prefix': 'xtr'
+    'body': 'xtr(${1:Selection},${2:Debut},${3:Fin})$4'
