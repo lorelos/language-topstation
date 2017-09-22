@@ -27,3 +27,6 @@
   'xtr':
     'prefix': 'xtr'
     'body': 'xtr(${1:Selection},${2:Debut},${3:Fin})$4'
+  'commentaires':
+    'prefix': 'com'
+    'body': '/* ${1:Commentaires} */'
