@@ -30,3 +30,6 @@
   'commentaires':
     'prefix': 'com'
     'body': '/* ${1:Commentaires} */'
+  'includes':
+    'prefix': 'inc'
+    'body': '#include "../include/${1:fichier}.inc"$2'
