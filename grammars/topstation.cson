@@ -15,6 +15,9 @@ patterns: [
 	{
 		include: '#fonctions'
 	}
+	{
+		include: '#variables'
+	}
 ]
 
 repository:
@@ -54,18 +57,18 @@ repository:
 			}
 
 			{
-				match: '\\b(?i)(abs|acos|add|angx|aplan|arg_cons|arn|asc|asin|atan|atan2|base|bit|bit_prec|bit_suiv|c127|car_n|chr|clq|clq_act|clq_co|clq_def|clq_gel|clq_lt|clq_lw|clq_ps|clq_tra|clq_ver|clr|clr_b|clr_r|clr_v|cos|date|defcar|defcmp|defdom|defdro|defind|deflin|defmdl|defmdlr|defpar|defpnt|defprc|defsel|defsym|defzon|dipd|dist|dniv|dplg|dplh|dplm|dpls|dplt|ech|errm|et|ficbrut|foc_suiv|focus|gdro|gist|gplan|hplan|inf|kech|len|lin_id|log|log10|lontex|lplan|ltrn|lwc|lwcn|malind|max|ma|mess|min|ml|mm|mod|modif|mprf|ndch|ndcv|newbase|nlfic|nmbr|nmr|nombase|nombd|nompres|ohor|ordre|page|parbloc|pent|pi|pl_dd|pl_df|pl_zb|pl_zh|plate_forme|pos|pos_ral_j|pos_ral_r|posfic|prec|prem|pres|prs_def|prs_form|prs_fpix|prs_haut|prs_larg|prs_marb|prs_mard|prs_marg|prs_marh|prs_odes|prs_opap|prs_trac|pt_dd|pt_dg|pt_zb|pt_zh|reste|rnd|rom8|rprf|selon|shor|sign|sin|si|stx_def|stx_fact|stx_font|stx_gras|stx_haut|stx_ital|stx_obli|stx_refl|stx_renv|stx_type|stx_vert|suiv|sup|symbloc|tan|tops|tq|trim|tx|udiax|udiay|udro|uhor|upc|upcn|uplan|util|valnum|vdro|version|vplan|wdro|xmil|xplan|xtr|ymil|yplan|zmil|zsurf)\\b'
+				match: '^(\\t|\\s)*(?i)(abs|acos|add|angx|aplan|arg_cons|arn|asc|asin|atan|atan2|base|bit|bit_prec|bit_suiv|c127|car_n|chr|clq|clq_act|clq_co|clq_def|clq_gel|clq_lt|clq_lw|clq_ps|clq_tra|clq_ver|clr|clr_b|clr_r|clr_v|cos|date|defcar|defcmp|defdom|defdro|defind|deflin|defmdl|defmdlr|defpar|defpnt|defprc|defsel|defsym|defzon|dipd|dist|dniv|dplg|dplh|dplm|dpls|dplt|ech|errm|et|ficbrut|foc_suiv|focus|gdro|gist|gplan|hplan|inf|kech|len|lin_id|log|log10|lontex|lplan|ltrn|lwc|lwcn|malind|max|ma|mess|min|ml|mm|mod|modif|mprf|ndch|ndcv|newbase|nlfic|nmbr|nmr|nombase|nombd|nompres|ohor|ordre|page|parbloc|pent|pi|pl_dd|pl_df|pl_zb|pl_zh|plate_forme|pos|pos_ral_j|pos_ral_r|posfic|prec|prem|pres|prs_def|prs_form|prs_fpix|prs_haut|prs_larg|prs_marb|prs_mard|prs_marg|prs_marh|prs_odes|prs_opap|prs_trac|pt_dd|pt_dg|pt_zb|pt_zh|reste|rnd|rom8|rprf|selon|shor|sign|sin|si|stx_def|stx_fact|stx_font|stx_gras|stx_haut|stx_ital|stx_obli|stx_refl|stx_renv|stx_type|stx_vert|suiv|sup|symbloc|tan|tops|tq|trim|tx|udiax|udiay|udro|uhor|upc|upcn|uplan|util|valnum|vdro|version|vplan|wdro|xmil|xplan|xtr|ymil|yplan|zmil|zsurf)\\b'
 				name: 'keyword.control.topstation'
 			}
 
 			{
-				match: '\\b(?i)(if|else|whil|runs|runl|var|runa|runm|runb|rund|runc|runz|runr|runp|rune|marq|proc)\\b'
-				name: 'keyword.control.topstation'
+				match: '^(\\t|\\s)*(?i)(if|else|whil|runs|runl|var|runa|runm|runb|rund|runc|runz|runr|runp|rune|marq|proc)\\b'
+				name: 'keyword.operator.topstation'
 			}
 
 			{
-				match: '\\b(?i)(ACER|ADEC|AFLI|AIDE|AIRE|AIRS|ALAL|ALDE|ALSI|ANUL|APLZ|APTY|APTZ|AROL|ARON|AROP|BITS|BORD|CALB|CALF|CAR|CARA|CARC|CARE|CARG|CARI|CARJ|CARL|CARM|CARN|CARP|CART|CARU|CARV|CARW|CARZ|CBDS|CBSF|CBSO|CENZ|CERC|CHBL|CHCO|CHDI|CHEM|CHFI|CHIM|CHMA|CHMD|CHMI|CHMO|CHSA|CHSL|CHSY|CHTX|CLO|CLO1|CLO2|CLO3|CLO4|CLQ|CLQE|CMP|CMPA|CMPB|CMPC|CMPD|CMPE|CMPF|CMPJ|CMPK|CMPL|CMPM|CMPP|CMPQ|CMPR|CMPS|CMPV|CMPX|CMPZ|CNTR|COEC|CORB|COUL|CPH|CPOL|CPV|CRFR|CRPT|CUPT|CURV|CVUE|DANG|DATE|DCMP|DCOD|DGIS|DIAG|DIAL|DIPD|DIPL|DIPP|DLIN|DOMI|DOMN|DOMO|DOS|DOUB|DPLA|DPNT|DSAC|DUPL|DUPM|DXF|DXFI|DXFV|ECRI|ECRT|EDIA|EMPR|ERRM|ERRP|ESYM|ETAT|EVNT|EVTL|EXEC|EXIT|FCOD|FCPY|FDIA|FERM|FINS|FLIN|FMOD|FOR|FRAJ|FSUP|FUSG|GISL|GOM|HALT|HELM|HISA|HISF|HISL|HORO|I9C|IBUL|ICC|IDC|IDD|IDS|IDT|IF|ILC|ILD|ILIN|ILL|ILPL|ILPT|ILR|ILS|ILT|IMCA|IMCP|IMFO|IMFP|IMG|IMP|IMPO|IMPP|IMPQ|IMPR|IND|INDC|INDE|INDL|INDM|INDP|INDV|INDZ|INSL|INSP|INVL|IPLS|IPOL|IPR|IPTS|ISN|ITR|IVPL|IZD|IZDL|JOIN|JREC|KECH|LANC|LBRI|LIAX|LIMS|LIN|LIPD|LIPS|LIRO|LIST|LITA|LMA|LNGR|MARQ|MDL|MDLC|MDLE|MDLL|MDLM|MDLP|MDLQ|MDLR|MDLS|MDLV|MDLZ|MDSI|MDSR|MEF1|MEF2|MEM|MIZO|MNTR|MNTS|MNU|NIV|NMBR|NOTE|ODBC|ODIA|OLIN|ORG|PAD|PAP|PAR|PARC|PARE|PARL|PARM|PARP|PART|PARV|PARZ|PASS|PAUS|PBLI|PBLL|PBLO|PCER|PF|PFA|PFC|PFD|PFE|PFU|PGU|PICO|PINC|PJPL|PJPT|PLNA|PLNE|PLPR|PNOD|PNT|POLY|POPS|PRC|PRCC|PRCD|PRCE|PRCI|PRCL|PRCM|PRCP|PRCT|PRCU|PRCV|PRCZ|PRJL|PRLB|PRLD|PRLL|PRLP|PROJ|PRPL|PRSA|PRSF|PT3D|PVD|PVP|QAO|QAP|QC|QDIM|QMOD|QPOP|QRUN|QSET|RAL|RATS|RAYO|RDCL|RDIA|RELV|RENR|RENV|REPA|RFUQ|RGEN|RMAT|RMDL|RNDZ|ROTA|RPFT|RPLA|RPTS|RUMT|RUN|RUNA|RUNB|RUNC|RUND|RUNE|RUNF|RUNL|RUNM|RUNP|RUNR|RUNS|RUNX|RUNZ|RUPT|SEL|SELC|SELE|SELL|SELM|SELN|SELP|SELV|SELZ|SLSL|SLSN|SMSI|SMSR|SQL|SSH|STOP|STX|SUPA|SUPB|SUPC|SUPD|SUPF|SUPG|SUPP|SURB|SURC|SURD|SURE|SURH|SURI|SURN|SURO|SURP|SURW|SYM|SYMC|SYME|SYML|SYMM|SYMP|SYMQ|SYMS|SYMV|SYMZ|SYST|TALU|TAMP|TANG|TDSY|TNCH|TNCL|TRA|TRIP|TRON|VALZ|VCER|VISP|VLIN|VMAJ|VOLM|VOLP|VREF|VRML|WHIL|WKCR|WKLI|WKRU|XCAR|XDPL|XDPT|ZONE|ZONI|ZONO|ZSUR)\\b'
-				name: 'keyword.control.topstation'
+				match: '^(\\t|\\s)*(?i)(ACER|ADEC|AFLI|AIDE|AIRE|AIRS|ALAL|ALDE|ALSI|ANUL|APLZ|APTY|APTZ|AROL|ARON|AROP|BITS|BORD|CALB|CALF|CAR|CARA|CARC|CARE|CARG|CARI|CARJ|CARL|CARM|CARN|CARP|CART|CARU|CARV|CARW|CARZ|CBDS|CBSF|CBSO|CENZ|CERC|CHBL|CHCO|CHDI|CHEM|CHFI|CHIM|CHMA|CHMD|CHMI|CHMO|CHSA|CHSL|CHSY|CHTX|CLO|CLO1|CLO2|CLO3|CLO4|CLQ|CLQE|CMP|CMPA|CMPB|CMPC|CMPD|CMPE|CMPF|CMPJ|CMPK|CMPL|CMPM|CMPP|CMPQ|CMPR|CMPS|CMPV|CMPX|CMPZ|CNTR|COEC|CORB|COUL|CPH|CPOL|CPV|CRFR|CRPT|CUPT|CURV|CVUE|DANG|DATE|DCMP|DCOD|DGIS|DIAG|DIAL|DIPD|DIPL|DIPP|DLIN|DOMI|DOMN|DOMO|DOS|DOUB|DPLA|DPNT|DSAC|DUPL|DUPM|DXF|DXFI|DXFV|ECRI|ECRT|EDIA|EMPR|ERRM|ERRP|ESYM|ETAT|EVNT|EVTL|EXEC|EXIT|FCOD|FCPY|FDIA|FERM|FINS|FLIN|FMOD|FOR|FRAJ|FSUP|FUSG|GISL|GOM|HALT|HELM|HISA|HISF|HISL|HORO|I9C|IBUL|ICC|IDC|IDD|IDS|IDT|IF|ILC|ILD|ILIN|ILL|ILPL|ILPT|ILR|ILS|ILT|IMCA|IMCP|IMFO|IMFP|IMG|IMP|IMPO|IMPP|IMPQ|IMPR|IND|INDC|INDE|INDL|INDM|INDP|INDV|INDZ|INSL|INSP|INVL|IPLS|IPOL|IPR|IPTS|ISN|ITR|IVPL|IZD|IZDL|JOIN|JREC|KECH|LANC|LBRI|LIAX|LIMS|LIN|LIPD|LIPS|LIRO|LIST|LITA|LMA|LNGR|MARQ|MDL|MDLC|MDLE|MDLL|MDLM|MDLP|MDLQ|MDLR|MDLS|MDLV|MDLZ|MDSI|MDSR|MEF1|MEF2|MEM|MIZO|MNTR|MNTS|MNU|NIV|NMBR|NOTE|ODBC|ODIA|OLIN|ORG|PAD|PAP|PAR|PARC|PARE|PARL|PARM|PARP|PART|PARV|PARZ|PASS|PAUS|PBLI|PBLL|PBLO|PCER|PF|PFA|PFC|PFD|PFE|PFU|PGU|PICO|PINC|PJPL|PJPT|PLNA|PLNE|PLPR|PNOD|PNT|POLY|POPS|PRC|PRCC|PRCD|PRCE|PRCI|PRCL|PRCM|PRCP|PRCT|PRCU|PRCV|PRCZ|PRJL|PRLB|PRLD|PRLL|PRLP|PROJ|PRPL|PRSA|PRSF|PT3D|PVD|PVP|QAO|QAP|QC|QDIM|QMOD|QPOP|QRUN|QSET|RAL|RATS|RAYO|RDCL|RDIA|RELV|RENR|RENV|REPA|RFUQ|RGEN|RMAT|RMDL|RNDZ|ROTA|RPFT|RPLA|RPTS|RUMT|RUN|RUNA|RUNB|RUNC|RUND|RUNE|RUNF|RUNL|RUNM|RUNP|RUNR|RUNS|RUNX|RUNZ|RUPT|SEL|SELC|SELE|SELL|SELM|SELN|SELP|SELV|SELZ|SLSL|SLSN|SMSI|SMSR|SQL|SSH|STOP|STX|SUPA|SUPB|SUPC|SUPD|SUPF|SUPG|SUPP|SURB|SURC|SURD|SURE|SURH|SURI|SURN|SURO|SURP|SURW|SYM|SYMC|SYME|SYML|SYMM|SYMP|SYMQ|SYMS|SYMV|SYMZ|SYST|TALU|TAMP|TANG|TDSY|TNCH|TNCL|TRA|TRIP|TRON|VALZ|VCER|VISP|VLIN|VMAJ|VOLM|VOLP|VREF|VRML|WHIL|WKCR|WKLI|WKRU|XCAR|XDPL|XDPT|ZONE|ZONI|ZONO|ZSUR)\\b'
+				name: 'support.function.topstation'
 			}
 		]
 
@@ -75,9 +78,21 @@ repository:
 				'match': '^[\\t ]*(rout|run),([A-Z][A-Za-z0-9_]+)'
 				'captures':
 					'1':
-						'name': 'keyword.control.topstation'
+						'name': 'storage.type.topstation'
 					'2':
 						'name': 'entity.name.function.topstation'
 				'name': 'meta.function.topstation'
+			}
+		]
+
+	variables:
+		patterns: [
+			{
+				match: '\\![A-Za-z0-9_]+'
+				name: 'variable.other.topstation'
+			}
+			{
+				match: '\\§[A-Za-z0-9_]+'
+				name: 'variable.language.topstation'
 			}
 		]
